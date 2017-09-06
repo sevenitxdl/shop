@@ -1,0 +1,242 @@
+/*样式初始化*/
+*{
+	margin:0; /* 外边距 */
+	padding:0; /* 内边距 */
+	list-style:none; /*列表样式*/
+}
+
+
+.top-header{
+	/*样式 top-header居中*/
+	width:1200px; /* 宽  px 像素单位*/
+	height:32px; /* 高 */
+	/*background:red; *//* 背景 红色*/
+	/*border:2px solid yellow;  边框 */
+
+	margin:0 auto;/* 外边距 */
+}
+
+
+.top-header .login{
+	float:left; /* 左浮动 */
+}
+
+.top-header .login a, .top-header .mini-nav a{
+	color:black; /*文字颜色*/
+	font-size:14px; /*文字大小*/
+	text-decoration:none; /*清空文字下划线*/
+	line-height: 32px; /* 行高*/
+}
+
+.top-header .mini-nav{
+	float:right; /* 右浮动 */ 
+}
+
+.top-header .mini-nav a{
+	margin:0 5px;
+}
+
+.logo{
+	width:1200px;
+	margin:0 auto;
+}
+.logo .logo-img{
+	float: left;
+}
+.logo .search{
+	float: right;
+
+	margin-top:30px;
+}
+
+.search-input{
+	width:600px;
+	height:46px;
+	border:2px solid #F03726;
+	padding:0 5px;
+	font-size: 14px;
+
+	vertical-align:middle; /* 垂直居中 */
+}
+.search-submit{
+	width:120px;
+	height:50px;
+	background:#F03726;
+	border:2px solid #F03726;
+	font-size: 20px;
+	color:white;
+
+	vertical-align:middle;
+}
+.nav{
+	clear:both;
+	width:1200px;
+	margin:0 auto;
+}
+.nav-left ul li{
+	float: left;
+}
+/*.nav-left ul li::before{
+	content:"";
+	height:16px;
+	border-right:1px solid #333;
+
+}
+.nav-left ul li.all-category::before, .nav-left ul li.first::before{
+	border-right:0;
+}*/
+.nav-left ul li a{
+	color:black;
+	text-decoration:none;
+	height:15px;
+	line-height: 45px; /* 当高度与行高一样的时候，文字垂直居中*/
+
+	width:100px;
+	display: inline-block; /* 把元素转化成块状元素 */
+	text-align:center; /* 文字居中*/
+
+	/*border-right:1px solid #333;
+	vertical-align: middle; 第一种 pass*/
+}
+.all-category{
+	width:150px;
+	height:45px;
+	background-color:#d2364c;
+
+	text-align:center; /* 文字居中*/
+	line-height: 45px; /* 当高度与行高一样的时候，文字垂直居中*/
+}
+.nav-left ul li.all-category a{
+	color:white;
+	border:0;
+}
+/*伪类  div::after 后  ::before  前 */
+.nav-left ul li::after{
+	content:''; /*空文字*/
+}
+
+.nav-left ul li::before{
+	content:''; /*空文字*/
+	border-left:1px solid #666;
+}
+.nav-left ul li.all-category::before, .nav-left ul li.first::before{
+	border:0;
+}
+
+.nav-right{
+	float: right; /* 简写方式 flr 右浮动  rll 左浮动 */
+}
+
+.nav-right-box{
+	width:160px;
+	height: 33px;
+	line-height: 33px;
+	background:url('../imgs/extra.png') ; /*背景图片*/
+}
+
+.nav-right-box a{
+	text-decoration:none;
+	color:yellow;
+	text-align:center;
+	display: inline-block;
+}
+
+.nav-right-box a i{
+	border:10px solid #fff;
+	background-color: black;
+	color:white;
+	padding:5px;
+	border-radius:50%;
+	margin-left: -15px;
+	margin-right:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================================*/
+.top-header2{
+	/*样式 top-header居中*/
+	width:1200px; /* 宽  px 像素单位*/
+	height:32px; /* 高 */
+	background:yellow; /* 背景 红色*/
+	/*border:2px solid yellow;  边框 */
+
+	margin:0 auto;/* 外边距 */
+
+	position:relative; /*相对定位*/
+}
+
+.top-header2 .login{
+	position: absolute; /* 绝对定位 */
+	left:0; /*左*/
+}
+
+.top-header2 .mini-nav{
+	position: absolute; /* 绝对定位 */
+	right:0; /*右*/
+}
+
+
+/* 只做浮动演示 */
+.demo{
+	width:1200px;
+	margin:0 auto;
+}
+.demo1{
+	float: left;
+}
+.demo2{
+	float: left;
+}
+
+.demo3{
+	clear:left; /* 清理左浮动*/
+}
+
+
+.demo4{
+	width:100px;
+	height: 100px;
+	background:red;
+
+	float: left;
+}
+
+.demo5{
+	width:150px;
+	height: 150px;
+	background:yellow;
+	float: left;
+}
+
+
+.demo6{
+	width:200px;
+	height: 200px;
+	background:blue;
+	float: left;
+}
+
+.clear{
+	clear:both;
+}
+
+
